@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
-const basename = import.meta.env.BASE_URL;
+const basename = import.meta.env.MODE === "production" ? "/for-jazzmeyn/" : "/";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
