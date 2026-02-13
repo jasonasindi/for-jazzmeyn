@@ -51,7 +51,7 @@ const Index = () => {
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <Heart className="w-10 h-10 text-blush mx-auto mb-6 animate-float" />
           <p className="font-body text-blush/90 tracking-[0.3em] uppercase text-sm mb-4 animate-fade-in-up">
-            Valentine's Weekend 2025
+            Valentine's Weekend 2026
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream mb-6 animate-fade-in-up-delay-1 leading-tight">
             Jazzmeyn
