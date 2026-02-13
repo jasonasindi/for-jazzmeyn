@@ -10,6 +10,7 @@ const events = [
     description: "An intimate evening to kick off our Valentine's weekend",
     icon: Utensils,
     location: "Aera Restaurant",
+    locationUrl: "https://share.google/Muz7pMLZt2aXyz9ua",
   },
   {
     day: "Saturday",
@@ -19,6 +20,7 @@ const events = [
     description: "Creating something beautiful together, just like us",
     icon: Palette,
     location: "Artventures",
+    locationUrl: "https://share.google/e4Ngx8tSaufjj6KTN",
   },
   {
     day: "Saturday",
@@ -28,6 +30,7 @@ const events = [
     description: "A perfect ending to our perfect Valentine's Day",
     icon: Utensils,
     location: "Joey Sherway",
+    locationUrl: "https://share.google/MP3lJJvnnETDvAzGh",
   },
 ];
 
@@ -111,10 +114,10 @@ const Index = () => {
                         <Clock className="w-3 h-3" />
                         {event.time}
                       </span>
-                      <span className="flex items-center gap-1.5 bg-secondary rounded-full px-3 py-1.5">
+                      <a href={event.locationUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 bg-secondary rounded-full px-3 py-1.5 hover:bg-primary/10 transition-colors">
                         <MapPin className="w-3 h-3" />
                         {event.location}
-                      </span>
+                      </a>
                     </div>
                   </div>
                 </div>
